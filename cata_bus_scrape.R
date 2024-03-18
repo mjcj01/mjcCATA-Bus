@@ -1,7 +1,4 @@
 library(tidyverse)
-library(remotes)
-
-remotes::install_github("SymbolixAU/gtfsway")
 library(gtfsway)
 
 url_VP <- "http://realtime.catabus.com/InfoPoint/GTFS-Realtime.ashx?&Type=VehiclePosition"
@@ -32,3 +29,4 @@ gtfs_vehiclePosition(gtfs_realtime(response_VP, content = "FeedMessage")) %>%
               col.names = TRUE,
               row.names = FALSE,
               quote = FALSE)
+
