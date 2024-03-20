@@ -16,7 +16,7 @@ jobs:
 
       - name: install more packages
         run: |
-          remotes::install_github("SymbolixAU/gtfsway")
+          remotes::install_github(repo = "SymbolixAU/gtfsway")
 
       - name: Install packages
         uses: r-lib/actions/setup-r-dependencies@v2
