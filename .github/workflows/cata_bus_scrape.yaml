@@ -18,6 +18,7 @@ jobs:
         run: |
           install.packages(c("remotes","testthat"),dependencies=TRUE)
           remotes::install_github("SymbolixAU/gtfsway")
+        shell: Rscript {0}
 
       - name: Install packages
         uses: r-lib/actions/setup-r-dependencies@v2
