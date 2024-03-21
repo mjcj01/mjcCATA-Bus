@@ -17,6 +17,7 @@ jobs:
       - name: install more packages
         run: |
           install.packages(c("remotes","testthat"),dependencies=TRUE)
+          gitcreds::gitcreds_set()
           remotes::install_github("SymbolixAU/gtfsway")
         shell: Rscript {0}
 
